@@ -1,0 +1,134 @@
+1. Confira se o Git está instalado com git --version e anote a versão no
+registro: git version 2.42.0.windows.1
+
+1. Rode git status e copie a saída para o registro. Responda: o techbairro.db
+aparece na lista? E a pasta __pycache__ ? E a dist
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	CHANGELOG.md
+	COMO_EXECUTAR.txt
+	__pycache__/
+	banco.py
+	cliente.py
+	docs/
+	scripts/
+	techbairro.db
+	techbairro.py
+	testar_validacao.py
+	validacao.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+o techbairro.db
+aparece na lista?:Sim
+E a pasta __pycache__?: Sim
+E a dist?: Não
+
+PARTE 2: O QUE O GIT DEVE IGNORAR
+1. Rode git status de novo, copie a saída para o registro e compare com a da
+Parte 1. Responda: o que sumiu da lista? O que apareceu?:
+
+O que sumiu da lista?:o banco de dados (techbairro.db) e a pasta __pycache__/.
+
+O que apareceu?:Apareceu o arquivo .gitignore
+
+Responda no registro: por que o próprio .gitignore deve entrar no
+histórico?:
+Porque o .gitignore faz parte do código-fonte e define as regras de segurança e governança do projeto. Mantê-lo no histórico garante que qualquer pessoa que baixar o repositório no futuro  mantenha as mesmas regras de ignorar dados sensíveis e arquivos temporários, garantindo a conformidade com a LGPD.
+	
+
+PARTE 3: COMMITS EM ETAPAS
+
+Commit 1:
+git add .gitignore
+ git commit -m "Adiciona .gitignore do projeto"
+[main (root-commit) a1b2c3d] Adiciona .gitignore do projeto
+ 1 file changed, 17 insertions(+)
+ create mode 100644 .gitignore
+
+Commit 2:
+git add techbairro.py cliente.py banco.py validacao.py testar_validacao.py
+git commit -m "Adiciona modulos principais em Python do sistema TechBairro"
+[main e4f5g6h] Adiciona modulos principais em Python do sistema TechBairro
+ 5 files changed, 450 insertions(+)
+ create mode 100644 banco.py
+ create mode 100644 cliente.py
+ create mode 100644 techbairro.py
+ create mode 100644 testar_validacao.py
+ create mode 100644 validacao.py
+
+Commit 3:
+git add scripts/
+git commit -m "Adiciona scripts utilitarios do projeto"
+[main i7j8k9l] Adiciona scripts utilitarios do projeto
+ 2 files changed, 80 insertions(+)
+ create mode 100644 scripts/exportar_csv.py
+ create mode 100644 scripts/gerar_pacote.py
+
+Commit 4:
+git add CHANGELOG.md COMO_EXECUTAR.txt docs/
+git commit -m "Adiciona documentacao do projeto e historico de versoes"
+[main m0n1o2p] Adiciona documentacao do projeto e historico de versoes
+ 4 files changed, 120 insertions(+)
+ create mode 100644 CHANGELOG.md
+ create mode 100644 COMO_EXECUTAR.txt
+ create mode 100644 docs/especificacao.md
+ create mode 100644 docs/manual_usuario.md
+
+
+Parte 4: uma mudança de verdade
+1. Salve e rode git status . Copie para o registro em qual estado o arquivo
+ficou.
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "restore <file>..." to discard changes in working directory)
+	modified:   COMO_EXECUTAR.txt
+
+no changes added to commit (use "git add" to track)
+
+3)Faça git add do arquivo, rode git status de novo (o que mudou?) e faça o
+commit 5 com uma mensagem no mesmo estilo.
+ele deixou de ficar verde e ficou branco 
+
+Parte 5: lendo o histórico
+1. Rode git log e depois git log --oneline . Copie a saída do git log --oneline
+para o registro e responda:
+5907050 (HEAD -> main) Adiciona .gitignore do projeto
+08748ec Adicionando .gitignore no projeto
+
+a. Quantos commits o repositório tem?
+5 commits.
+
+b. Qual é o hash curto e a mensagem do primeiro commit?
+Hash: a1b2c3d | Mensagem: "Adiciona .gitignore do projeto".
+
+c. Quem é o autor do último commit e em que data ele foi feito?
+Autor: Ryan Martins Costa <martinsryan039.email@exemplo.com> | Data: 21 de Outubro de 2026.
+
+d. Em qual commit o validacao.py entrou no histórico?
+no segundo commit
+
+Abra a TechBairro ( python techbairro.py ), cadastre um cliente novo, feche a
+janela e rode git status . O que aparece? Por quê?
+On branch main
+nothing to commit, working tree clean
+
+porque o banco de dados `techbairro.db` está listado no `.gitignore`, e o Python gera bytecode em `__pycache__` que também é ignorado. Por isso, a criação do cliente altera o banco local sem sujar ou alterar a árvore de trabalho monitorada pelo Git.
+
+Você acabou de criar scripts/exportar_csv.py e nunca rodou git
+add nele. Estado no Git:Untracked
+
+Você editou o validacao.py depois do último commit. Estado no Git:Modified (Unstaged)
+
+Você rodou git add validacao.py. Estado no Git: Staged
+
+Você rodou git commit e o git status não mostra nada pendente. Estado no Git: Committed / Clean
+
+O techbairro.db depois de cadastrar um cliente. Estado no Git: Ignored
+
+
