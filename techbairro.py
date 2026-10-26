@@ -13,7 +13,7 @@ import os
 # NOVO NA AULA 18: a versão fica num único lugar.
 # Para publicar uma versão nova, basta mudar aqui
 # (e registrar a mudança no CHANGELOG).
-VERSAO = "3.2.1"
+VERSAO = "3.3.1"
 # ============================================================
 # JANELA PRINCIPAL
 # ============================================================
