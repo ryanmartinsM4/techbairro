@@ -24,10 +24,10 @@ PASTA_DO_PROJETO = os.path.dirname(PASTA_DOS_SCRIPTS)
 
 # Versão que será publicada
 # (tem que ser a MESMA da constante VERSAO do techbairro.py)
-VERSAO = "3.2.1"   # COMPLETE: a mesma versão do techbairro.py
+VERSAO = "3.3.1"   # COMPLETE: a mesma versão do techbairro.py
 
 # Pastas que NÃO entram no pacote
-PASTAS_FORA = [".git", "__pycache__"]   # COMPLETE: duas pastas
+PASTAS_FORA = [".git", "__pycache__", "dist"]   # COMPLETE: duas pastas
 
 # Tipos de arquivo que NÃO entram no pacote
 EXTENSOES_FORA = [".db", ".md"]   # COMPLETE: dois tipos de arquivo
