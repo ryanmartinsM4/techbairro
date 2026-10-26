@@ -2,7 +2,7 @@
 
 ## Em desenvolvimento
 ### Adicionado
-- Código publicado no GitHub, com histórico de versões.  a
+- Código publicado no GitHub, com histórico de versões.   
 
 ## v3.3.1 (Aula 21)
 
