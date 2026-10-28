@@ -31,10 +31,10 @@
 ## v3.2.1 (Aula 18)
 
 ### Alterado
-- O número da versão passou a ficar ______________________________.
+- O número da versão passou a ficar v3.2.1
 ### Adicionado
-- Script scripts/gerar_pacote.py, que ______________________________.
-- Arquivo COMO_EXECUTAR.txt, com ______________________________.
+- Script scripts/gerar_pacote.py, que  monta um arquivo .zip e deixa fora o que não deve ser distribuido
+- Arquivo COMO_EXECUTAR.txt, com a nova versão explica os requisitos, forma de execultar e os dados que vão ser apresentados
 
 ## v3.2 (Aula 16)
 ### Alterado
