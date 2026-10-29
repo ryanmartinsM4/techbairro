@@ -12,4 +12,4 @@ Sistema operacional e versão do Python: ____
 ## Testes automáticos
 Saída do `python testar_validacao.py`: ok
 ## Defeitos encontrados
-nenhum (o que falhou, como foi corrigido e em qual commit; ou "nenhum")
+nenhum (o que falhou, como foi corrigido e em qual commit; ou "nenhum")  
