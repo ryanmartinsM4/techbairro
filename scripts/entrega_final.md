@@ -53,5 +53,7 @@ a TechBairro?Basta clonar o repositório no computador, abrir o terminal na past
 
 Autoavaliação (até 5 linhas): o que ficou bom no seu vídeo, o que você mudaria e o que aprendeu de
 mais importante nesta unidade curricular. (Parte 6)
-## Autoavaliação
+## Autoavaliação 
 como é a primeira vez fazendo um video ele não ficou tão bom, mais tambem não ficou ruim e a explicação até que dá pro gasto e eu tentaria melhorar mais o audio que eu podia ter feito ele mais facil, mais decidir fazer dificil e o que eu mais aprendi foi como usar o git e tambem o github, e eu acho isso mais importante por que o git hub é algo que eu vou ter que usar muito no futuro,  (Parte 6)
+
+
